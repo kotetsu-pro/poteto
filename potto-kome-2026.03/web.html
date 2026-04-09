@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>こどもとコーダー。｜WEB制作や子育てについてのブログ</title>
+  <link rel="shortcut icon" href="img/favicon.png">
+  <link rel="stylesheet" href="css/style.css">
+
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Noto+Serif+JP:wght@200..900&family=Shippori+Mincho&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js" defer></script>
+  <script src="js/main.js" defer></script>
+</head>
+
+<body>
+  <header id="header">
+
+    <div class="header__banner">
+      ✦ こどもとコーダー。｜WEB制作や子育てについてのブログ ✦
+    </div>
+
+    <div class="header__inner">
+
+      <div class="site-title js-title">
+        <a href="index.html">
+          こどもとコーダー。
+          <small>Web / Kids / Cafe</small>
+        </a>
+      </div>
+
+      <nav class="blog-nav" aria-label="ブログカテゴリー">
+        <ul class="blog-nav__list">
+          <li class="blog-nav__item">
+            <a href="web.html">
+              <span class="dot dot-web"></span>Web制作
+            </a>
+          </li>
+
+          <li class="blog-nav__item">
+            <a href="kids.html">
+              <span class="dot dot-kids"></span>KIDS
+            </a>
+          </li>
+
+          <li class="blog-nav__item">
+            <a href="cafe.html">
+              <span class="dot dot-cafe"></span>CAFE
+            </a>
+          </li>
+        </ul>
+      </nav>
+
+      <nav class="site-nav" aria-label="サイトナビゲーション">
+        <ul class="site-nav__list">
+
+          <li class="site-nav__item">
+            <a href="works.html" class="site-nav__link">WORKS</a>
+          </li>
+
+          <li class="site-nav__item">
+            <a href="about.html" class="site-nav__link">ABOUT</a>
+          </li>
+
+          <li class="site-nav__item">
+            <a href="contact.html" class="site-nav__cta">Contact</a>
+          </li>
+
+        </ul>
+      </nav>
+
+      <div class="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+
+      <div class="hamburger-nav">
+        <nav class="hamburger__blog-nav" aria-label="ブログカテゴリー">
+          <ul class="blog-nav__list">
+            <li class="blog-nav__item">
+              <a href="web.html">
+                <span class="dot dot-web"></span>Web制作
+              </a>
+            </li>
+
+            <li class="blog-nav__item">
+              <a href="kids.html">
+                <span class="dot dot-kids"></span>KIDS
+              </a>
+            </li>
+
+            <li class="blog-nav__item">
+              <a href="cafe.html">
+                <span class="dot dot-cafe"></span>CAFE
+              </a>
+            </li>
+          </ul>
+        </nav>
+
+        <nav class="hamburger__site-nav" aria-label="サイトナビゲーション">
+          <ul class="site-nav__list">
+
+            <li class="site-nav__item">
+              <a href="works.html" class="site-nav__link">WORKS</a>
+            </li>
+
+            <li class="site-nav__item">
+              <a href="about.html" class="site-nav__link">ABOUT</a>
+            </li>
+
+            <li class="site-nav__item">
+              <a href="contact.html" class="site-nav__cta">Contact</a>
+            </li>
+
+          </ul>
+        </nav>
+      </div>
+    </div>
+
+  </header>
+  <main class="web-page">
+
+    <div class="wrap">
+      <!-- BREADCRUMB -->
+      <div class="breadcrumb">
+        <a href="index.html">Home</a>
+        <span class="arrow"></span>
+        <span>Category</span>
+        <span class="arrow"></span>
+        <span>Web制作</span>
+      </div>
+
+      <!-- PAGE HEADER -->
+      <section class="sab-page__header">
+        <div class="page-header__left">
+          <p class="page-label">Category</p>
+          <h1 class="page-h1 category__h1">Web制作</h1>
+          <p class="page-desc category__desc">
+            HTML・CSS・JavaScriptなど、コーディングに関する記事をまとめています。<br>初心者向けにわかりやすく、コピペOKのコードも随時公開中。
+          </p>
+        </div>
+        <div class="page-header__right">
+          <div class="code-ui">
+            <pre id="typing-code"></pre>
+          </div>
+
+        </div>
+      </section>
+
+      <div class="sub-page__container">
+
+        <!-- MAIN -->
+        <div class="sub-page__main">
+          <section id="category-list" class="section-block">
+            <ul class="listing-layout">
+              <li>
+                <a href="#" class="card">
+                  <div class="card-thumb">
+                    <div class="card-thumb-inner">サムネイル</div>
+                  </div>
+                  <div class="card-body">
+                    <div class="card-meta">
+                      <span class="cat-badge">Web制作</span>
+                      <span class="card-date">2025.11.20</span>
+                    </div>
+                    <h2 class="card-title">【コピペOK】CSSだけで作れるホバーボタン5選｜CodePenデモ付きで初心者でも簡単</h2>
+                  </div>
+                </a>
+              </li>
+
+              <li>
+                <a href="#" class="card">
+                  <div class="card-thumb">
+                    <div class="card-thumb-inner">サムネイル</div>
+                  </div>
+                  <div class="card-body">
+                    <div class="card-meta">
+                      <span class="cat-badge">Web制作</span>
+                      <span class="card-date">2025.11.20</span>
+                    </div>
+                    <h2 class="card-title">【コピペOK】CSSだけで作れるホバーボタsfaffafafasfdasdン5選｜CodePenデモ付きで初心者でも簡単</h2>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="card">
+                  <div class="card-thumb">
+                    <div class="card-thumb-inner">サムネイル</div>
+                  </div>
+                  <div class="card-body">
+                    <div class="card-meta">
+                      <span class="cat-badge">Web制作</span>
+                      <span class="card-date">2025.11.20</span>
+                    </div>
+                    <h2 class="card-title">【コピペOK】CSSだけで作れるホバーボタン5選｜CodePenデモ付きで初心者でも簡単</h2>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="card">
+                  <div class="card-thumb">
+                    <div class="card-thumb-inner">サムネイル</div>
+                  </div>
+                  <div class="card-body">
+                    <div class="card-meta">
+                      <span class="cat-badge">Web制作</span>
+                      <span class="card-date">2025.11.20</span>
+                    </div>
+                    <h2 class="card-title">【コピペOK】CSSだけで作れるホバーボタン5選｜CodePenデモ付きで初心者でも簡単</h2>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="card">
+                  <div class="card-thumb">
+                    <div class="card-thumb-inner">サムネイル</div>
+                  </div>
+                  <div class="card-body">
+                    <div class="card-meta">
+                      <span class="cat-badge">Web制作</span>
+                      <span class="card-date">2025.11.20</span>
+                    </div>
+                    <h2 class="card-title">【コピペOK】CSSだけで作れるホバーボタン5選｜CodePenデモ付きで初心者でも簡単</h2>
+                  </div>
+                </a>
+              </li>
+            </ul>
+          </section>
+
+        </div>
+
+        <!-- SIDEBAR -->
+        <aside class="sub-page__sidebar">
+
+          <!-- profile card -->
+          <section id="side__profile" class="sidebar-section">
+            <h3 class="sidebar-head">Profile</h3>
+            <div class="profile-card">
+              <p class="profile-card-name">こてつ</p>
+              <p class="profile-card-role">Web Coder &amp; 2 Kids Mam</p>
+              <ul>
+                <li class="profile-card-line"><b>Location</b> 大阪府</li>
+                <li class="profile-card-line"><b>Family</b> 夫・子ども2人</li>
+                <li class="profile-card-line"><b>Hobby</b> カフェ巡り・カメラ</li>
+                <li class="profile-card-line"><b>Tools</b> VS Code / Figma</li>
+                <li class="profile-card-line"><b>Status</b> 受注中 ✔</li>
+              </ul>
+              <ul class="sns__sp">
+                <li>
+                  <a href="" class="sns-icon">
+                    <img src="img/note-icon.png" alt="noteのアイコン">
+                  </a>
+                </li>
+                <li>
+                  <a href="" class="sns-icon instagram-icon">
+                    <img src="img/instagram-icon.png" alt="Instagramのアイコン">
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </section>
+
+          <!-- SNS -->
+          <section id="side__sns" class="sidebar-section">
+            <h3 class="sidebar-head">SNS</h3>
+            <ul class="sns-list">
+              <li>
+                <a href="#" class="sns-link">
+                  <span class="sns-icon">
+                    <img src="img/note-icon.png" alt="noteのアイコン">
+                  </span>
+                  note
+                  <span class="sns-handle">kotetsu</span>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="sns-link">
+                  <span class="sns-icon instagram-icon">
+                    <img src="img/instagram-icon.png" alt="Instagramのアイコン">
+                  </span>
+                  Instagram
+                  <span class="sns-handle">@kotetsu</span>
+                </a>
+              </li>
+
+            </ul>
+          </section>
+
+          <!-- side__category -->
+          <section id="side__category" class="sidebar-section">
+            <h3 class="sidebar-head">blog category</h3>
+
+            <nav class="side__blog-nav" aria-label="ブログカテゴリー">
+              <ul class="blog-nav__list">
+                <li class="blog-nav__item">
+                  <a href="web.html">
+                    <div class="blog-nav__item--left">
+                      <span class="dot dot-web"></span>Web制作
+                    </div>
+                    <span class="other-cat-count">9 articles</span>
+                  </a>
+                </li>
+
+                <li class="blog-nav__item">
+
+                  <a href="kids.html">
+                    <div class="blog-nav__item--left">
+                      <span class="dot dot-kids"></span>KIDS
+                    </div>
+                    <span class="other-cat-count">9 articles</span>
+                  </a>
+                </li>
+
+                <li class="blog-nav__item">
+                  <a href="cafe.html">
+                    <div class="blog-nav__item--left">
+                      <span class="dot dot-cafe"></span>CAFE
+                    </div>
+                    <span class="other-cat-count">9 articles</span>
+                  </a>
+                </li>
+              </ul>
+            </nav>
+          </section>
+
+          <!-- contact cta -->
+          <section id="side__cta" class="sidebar-section">
+            <div class="sidebar-cta">
+              <p class="sidebar-cta-title">Web制作の<br>ご依頼はこちら</p>
+              <p class="sidebar-cta-text">LP・サイト制作など、<br>お気軽にご相談ください。</p>
+              <a href="contact.html" class="sidebar-btn">お問い合わせ</a>
+            </div>
+          </section>
+
+        </aside>
+      </div>
+    </div>
+  </main>
+
+  <footer id="footer">
+
+    <div class="footer__inner">
+      <div class="footer-left">
+        <div class="site-title">
+          <a href="index.html">
+            こどもとコーダー。
+            <small>Web / Kids / Cafe — by Kotetsu</small>
+          </a>
+        </div>
+
+        <div class="privacy pc">
+          <a href="privacy.html">プライバシーポリシー</a>
+        </div>
+      </div>
+      <div class="footer__nav-wrap">
+        <div class="footer__nav-group">
+          <p class="footer__nav-title">BLOG</p>
+
+          <nav class="footer__nav" aria-label="ブログメニュー">
+            <ul class="footer__nav-list">
+              <li><a href="web.html">Web制作</a></li>
+              <li><a href="kids.html">Kids / 子育て</a></li>
+              <li><a href="cafe.html">Cafe / カフェ</a></li>
+            </ul>
+          </nav>
+        </div>
+
+        <div class="footer__nav-group">
+          <p class="footer__nav-title">MORE</p>
+
+          <nav class="footer__nav" aria-label="サイトメニュー">
+            <ul class="footer__nav-list">
+              <li><a href="about.html">About / こてつについて</a></li>
+              <li><a href="works.html">Works / 制作実績</a></li>
+              <li><a href="contact.html">Contact / お問い合わせ</a></li>
+              <li><a href="#">Instagram</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+      <div class="privacy sp">
+        <a href="privacy.html">プライバシーポリシー</a>
+      </div>
+    </div>
+
+    <p class="footer__copy">
+      © 2025 こどもとコーダー。Kotetsu. All rights reserved.
+    </p>
+
+  </footer>
+
+</body>
+
+</html>

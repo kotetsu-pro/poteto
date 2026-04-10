@@ -1361,6 +1361,12 @@ about
   color: var(--espresso);
 }
 
+@media screen and (max-width: 768px) {
+  .breadcrumb {
+    padding: 96px 0 16px;
+  }
+}
+
 /* ── PAGE HEADER ── */
 
 .sab-page__header {
@@ -1395,6 +1401,7 @@ about
   height: 1px;
   background-color: var(--latte);
   left: 50%;
+  bottom: 0;
   transform: translateX(-50%);
 }
 
@@ -1489,17 +1496,17 @@ about
 
 
 @media screen and (max-width: 768px) {
-  .about-header {
+  .sab-page__header {
     padding: 48px 0 32px;
     display: flex;
-    flex-direction: column-reverse;
+    flex-direction: column;
     gap: 32px;
-    align-items: start;
+    align-items: end;
   }
 
-  .about-header::before {
-    left: 90px;
-    top: 139px;
+  .sab-page__header::before {
+    right: 20px;
+    bottom: 40px;
     font-size: 60px;
   }
 
@@ -1585,6 +1592,13 @@ about
   margin-bottom: 0;
 }
 
+@media screen and (max-width: 1024px) {
+  .sub-page__main {
+    padding-right: 24px;
+  }
+
+}
+
 @media screen and (max-width: 768px) {
   .sub-page__container {
     flex-direction: column;
@@ -1593,6 +1607,7 @@ about
   .sub-page__main {
     padding: 64px 0 0;
     border-right: none;
+    width: 100%;
   }
 
   .block-h2 {
@@ -1748,7 +1763,6 @@ about
 .sub-page__sidebar {
   padding: 64px 0 80px 48px;
   width: 25%;
-
 }
 
 .sidebar-section {
@@ -1766,9 +1780,17 @@ about
   border-bottom: 1px solid var(--latte);
 }
 
+@media screen and (max-width: 1024px) {
+  .sub-page__sidebar {
+    padding-left: 24px;
+    width: auto;
+  }
+}
+
 @media screen and (max-width: 768px) {
-  .about-sidebar {
+  .sub-page__sidebar {
     padding: 0 0 20px 0;
+    width: 100%;
   }
 }
 
@@ -2050,10 +2072,9 @@ web制作ページ
 
 .listing-layout {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
   gap: 24px;
   align-items: stretch;
-  padding: 0 48px;
 }
 
 
@@ -2073,7 +2094,7 @@ web制作ページ
   box-shadow: 0 4px 20px rgba(40, 24, 12, 0.07);
 }
 
-.card:hover .card-thumb-inner {
+.card:hover .card-thumb-inner img {
   transform: scale(1.04);
 }
 
@@ -2092,7 +2113,26 @@ web制作ページ
   align-items: center;
   justify-content: center;
   color: var(--gray);
+  position: relative;
+}
+
+.card-thumb-inner img {
+  aspect-ratio: 16/ 9;
   transition: transform 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  will-change: transform;
+}
+
+.cat-badge {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  font-family: var(--cormorant);
+  font-size: 10px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  padding: 3px 8px;
+  background: var(--cream);
+  color: var(--caramel);
 }
 
 .card-body {
@@ -2109,18 +2149,8 @@ web制作ページ
   gap: 8px;
 }
 
-.cat-badge {
-  font-family: var(--cormorant);
-  font-size: 10px;
-  letter-spacing: 3px;
-  text-transform: uppercase;
-  padding: 3px 8px;
-  background: rgba(196, 137, 90, 0.12);
-  color: var(--caramel);
-}
-
 .card-date {
-  font-family:  var(--cormorant);
+  font-family: var(--cormorant);
   font-size: 11px;
   letter-spacing: 1px;
   color: var(--gray);
@@ -2133,4 +2163,38 @@ web制作ページ
   line-height: 1.75;
   color: var(--espresso);
   transition: color 0.2s;
+}
+
+@media screen and (max-width: 768px) {
+  .listing-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .web-page .page-header__right {
+    height: 120px;
+  }
+
+  .card {
+    flex-direction: row;
+    padding-bottom: 24px;
+    border: none;
+    border-bottom: 1px solid var(--latte);
+    align-items: center;
+  }
+
+  .card-body {
+    padding: 8px 8px 0;
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 10px;
+    flex: 1;
+  }
+
+  .card-thumb-inner img {
+    width: clamp(120px, 5vw, 200px);
+  }
+
+  .card-title {
+    font-size: 13px;
+  }
 }

@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>こどもとコーダー。｜WEB制作や子育てについてのブログ</title>
+  <link rel="shortcut icon" href="img/favicon.png">
+  <link rel="stylesheet" href="css/style.css">
+
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Noto+Serif+JP:wght@200..900&family=Shippori+Mincho&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js" defer></script>
+  <script src="js/main.js" defer></script>
+</head>
+
+<body class="contact-page">
+  <header id="header">
+    <div class="header__inner">
+
+      <div class="site-title js-title">
+        <a href="index.html">
+          こどもとコーダー。
+          <small>Web / Kids / Cafe</small>
+        </a>
+      </div>
+
+      <nav class="blog-nav" aria-label="ブログカテゴリー">
+        <ul class="blog-nav__list">
+          <li class="blog-nav__item">
+            <a href="web.html">
+              <span class="dot dot-web"></span>Web制作
+            </a>
+          </li>
+
+          <li class="blog-nav__item">
+            <a href="kids.html">
+              <span class="dot dot-kids"></span>KIDS
+            </a>
+          </li>
+
+          <li class="blog-nav__item">
+            <a href="cafe.html">
+              <span class="dot dot-cafe"></span>CAFE
+            </a>
+          </li>
+        </ul>
+      </nav>
+
+      <nav class="site-nav" aria-label="サイトナビゲーション">
+        <ul class="site-nav__list">
+
+          <li class="site-nav__item">
+            <a href="works.html" class="site-nav__link">WORKS</a>
+          </li>
+
+          <li class="site-nav__item">
+            <a href="about.html" class="site-nav__link">ABOUT</a>
+          </li>
+
+          <li class="site-nav__item">
+            <a href="contact.html" class="site-nav__cta">Contact</a>
+          </li>
+
+        </ul>
+      </nav>
+
+      <div class="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+
+      <div class="hamburger-nav">
+        <nav class="hamburger__blog-nav" aria-label="ブログカテゴリー">
+          <ul class="blog-nav__list">
+            <li class="blog-nav__item">
+              <a href="web.html">
+                <span class="dot dot-web"></span>Web制作
+              </a>
+            </li>
+
+            <li class="blog-nav__item">
+              <a href="kids.html">
+                <span class="dot dot-kids"></span>KIDS
+              </a>
+            </li>
+
+            <li class="blog-nav__item">
+              <a href="cafe.html">
+                <span class="dot dot-cafe"></span>CAFE
+              </a>
+            </li>
+          </ul>
+        </nav>
+
+        <nav class="hamburger__site-nav" aria-label="サイトナビゲーション">
+          <ul class="site-nav__list">
+
+            <li class="site-nav__item">
+              <a href="works.html" class="site-nav__link">WORKS</a>
+            </li>
+
+            <li class="site-nav__item">
+              <a href="about.html" class="site-nav__link">ABOUT</a>
+            </li>
+
+            <li class="site-nav__item">
+              <a href="contact.html" class="site-nav__cta">Contact</a>
+            </li>
+
+          </ul>
+        </nav>
+      </div>
+    </div>
+
+  </header>
+  <main>
+
+    <div class="wrap">
+      <!-- BREADCRUMB -->
+      <div class="breadcrumb">
+        <a href="index.html">Home</a>
+        <span class="arrow"></span>
+        <span>Contact</span>
+      </div>
+
+      <!-- PAGE HEADER -->
+      <section class="sab-page__header">
+        <div class="page-header__left">
+          <p class="page-label">contact</p>
+          <h1 class="page-h1">お問い合わせ</h1>
+          <p class="page-lead">
+            Web制作のご依頼・ご相談はこちらから。<br>
+            内容を確認のうえ、2〜3営業日以内にご返信します。
+          </p>
+        </div>
+
+      </section>
+
+      <div class="sub-page__main">
+        <section class="contact-form">
+
+          <div class="form__intro">
+            <p class="form__intro-title">まずはお気軽にご相談ください。</p>
+            <p class="form__intro-text">
+              「こんなサイトを作りたい」「予算はどれくらい？」など、漠然としたご相談でも大丈夫です。<br>
+              一緒に考えながら進めていきます。
+            </p>
+          </div>
+
+          <form action="#" method="post" novalidate>
+
+            <!-- お名前 -->
+            <div class="form__group">
+              <label class="form__label" for="name">
+                お名前
+                <span class="form-required">必須</span>
+              </label>
+              <input class="form__input" type="text" id="name" name="name" placeholder="山田 太郎" autocomplete="name"
+                required>
+            </div>
+
+            <!-- メールアドレス -->
+            <div class="form__group">
+              <label class="form__label" for="email">
+                メールアドレス
+                <span class="form-required">必須</span>
+              </label>
+              <input class="form__input" type="email" id="email" name="email" placeholder="hello@example.com"
+                autocomplete="email" required>
+            </div>
+
+            <!-- 会社名・屋号 -->
+            <div class="form__group">
+              <label class="form__label" for="company">
+                会社名・屋号
+                <span class="form-optional">任意</span>
+              </label>
+              <input class="form__input" type="text" id="company" name="company" placeholder="〇〇株式会社 / 個人"
+                autocomplete="organization">
+            </div>
+
+            <!-- ご依頼の種類 -->
+            <div class="form__group">
+              <p class="form__label">
+                ご依頼の種類
+                <span class="form-required">必須</span>
+              </p>
+              <div class="form__radio-group">
+                <label class="form__radio">
+                  <input type="radio" name="type" value="lp" required>
+                  <span class="radio-dot"></span>LP制作
+                </label>
+                <label class="form__radio">
+                  <input type="radio" name="type" value="corporate">
+                  <span class="radio-dot"></span>コーポレートサイト
+                </label>
+                <label class="form__radio">
+                  <input type="radio" name="type" value="wordpress">
+                  <span class="radio-dot"></span>WordPress
+                </label>
+                <label class="form__radio">
+                  <input type="radio" name="type" value="other">
+                  <span class="radio-dot"></span>その他・相談
+                </label>
+              </div>
+            </div>
+
+            <!-- ご予算 -->
+            <div class="form__group">
+              <label class="form__label" for="budget">
+                ご予算のイメージ
+                <span class="form-optional">任意</span>
+              </label>
+              <div class="form__select-wrap">
+                <select class="form__select" id="budget" name="budget">
+                  <option value="" disabled selected>選択してください</option>
+                  <option>〜10万円</option>
+                  <option>10〜30万円</option>
+                  <option>30〜50万円</option>
+                  <option>50万円以上</option>
+                  <option>未定・相談したい</option>
+                </select>
+              </div>
+            </div>
+
+            <!-- お問い合わせ内容 -->
+            <div class="form__group">
+              <label class="form__label" for="message">
+                お問い合わせ内容
+                <span class="form-required">必須</span>
+              </label>
+              <textarea class="form__textarea" id="message" name="message" rows="5"
+                placeholder="例）5ページ程度のコーポレートサイトを検討しています。参考：https://〜" required></textarea>
+            </div>
+
+            <!-- プライバシーポリシー -->
+            <div class="form__privacy">
+              <input type="checkbox" id="privacy" name="privacy" required>
+              <label for="privacy">
+                <a href="#" target="_blank" rel="noopener">プライバシーポリシー</a>に同意のうえ送信します。<br>
+                いただいた情報はお問い合わせへの返信のみに使用し、第三者への提供は行いません。
+              </label>
+            </div>
+
+            <!-- 送信ボタン -->
+            <button type="submit" class="form__submit">無料で相談する</button>
+
+          </form>
+
+        </section>
+
+      </div>
+  </main>
+
+  <footer id="footer">
+
+    <div class="footer__inner">
+      <div class="footer-left">
+        <div class="site-title">
+          <a href="index.html">
+            こどもとコーダー。
+            <small>Web / Kids / Cafe — by Kotetsu</small>
+          </a>
+        </div>
+
+        <div class="privacy pc">
+          <a href="privacy.html">プライバシーポリシー</a>
+        </div>
+      </div>
+      <div class="footer__nav-wrap">
+        <div class="footer__nav-group">
+          <p class="footer__nav-title">BLOG</p>
+
+          <nav class="footer__nav" aria-label="ブログメニュー">
+            <ul class="footer__nav-list">
+              <li><a href="web.html">Web制作</a></li>
+              <li><a href="kids.html">Kids / 子育て</a></li>
+              <li><a href="cafe.html">Cafe / カフェ</a></li>
+            </ul>
+          </nav>
+        </div>
+
+        <div class="footer__nav-group">
+          <p class="footer__nav-title">MORE</p>
+
+          <nav class="footer__nav" aria-label="サイトメニュー">
+            <ul class="footer__nav-list">
+              <li><a href="about.html">About / こてつについて</a></li>
+              <li><a href="works.html">Works / 制作実績</a></li>
+              <li><a href="contact.html">Contact / お問い合わせ</a></li>
+              <li><a href="#">Instagram</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+      <div class="privacy sp">
+        <a href="privacy.html">プライバシーポリシー</a>
+      </div>
+    </div>
+
+    <p class="footer__copy">
+      © 2025 こどもとコーダー。Kotetsu. All rights reserved.
+    </p>
+
+  </footer>
+
+</body>
+
+</html>

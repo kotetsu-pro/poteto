@@ -20,8 +20,9 @@
   <script src="js/main.js" defer></script>
 </head>
 
-<body class="about-page">
+<body class="parenting-page">
   <header id="header">
+
     <div class="header__inner">
 
       <div class="site-title js-title">
@@ -128,28 +129,22 @@
       <div class="breadcrumb">
         <a href="index.html">Home</a>
         <span class="arrow"></span>
-        <span>About</span>
+        <span>子育て</span>
       </div>
 
       <!-- PAGE HEADER -->
       <section class="sab-page__header">
         <div class="page-header__left">
-          <p class="page-label">Profile</p>
-          <h1 class="page-h1">こてつって<br>どんな人？</h1>
-          <p class="page-lead">
-            大阪在住、2児のママ。<br>
-            子育てに奮闘しながら、毎日コードを書いています。<br>
-            Web制作・子育て・カフェ巡りについて発信中。
+          <p class="page-label">Category</p>
+          <h1 class="page-h1 category__h1">子育て</h1>
+          <p class="page-desc category__desc">
+            育児の中で感じたことや日常の気づき、便利だったアイテムなどをまとめています。<br>
+            忙しい毎日の中でも役立つ、リアルな体験ベースの情報を発信中。
           </p>
         </div>
         <div class="page-header__right">
-          <div class="avatar-wrap">
-            <div class="avatar-ring-2"></div>
-            <div class="avatar-ring"></div>
-            <div class="avatar">
-              <img src="img/profile.webp" alt="プロフィール画像">
-            </div>
-            <p class="avatar-caption">Kotetsu — Web Coder &amp; Mam</p>
+          <div class="img">
+            <img src="img/parenting-top.webp" alt="parentingのイメージ画像">
           </div>
         </div>
       </section>
@@ -158,120 +153,132 @@
 
         <!-- MAIN -->
         <div class="sub-page__main">
-
-          <!-- 自己紹介 -->
-          <section id="introduction" class="section-block fade-section">
-            <p class="block-label">Introduction</p>
-            <h2 class="block-h2">はじめまして、こてつです。</h2>
-            <div class="body-text">
-              <p>
-                大阪で2人の子どもを育てながら、Webコーダーとして日々作業しています。
-                もともと全くの未経験からHTMLとCSSを始め、「作ったものが画面に現れる」その瞬間の楽しさに
-                すっかりハマってしまいました。
-              </p>
-              <p>
-                子育て中でも「背中を見せたい」という気持ちが一番の原動力です。
-                仕事・育児・カフェ巡りをしながら、毎日少しずつアウトプットを続けています。
-                このブログがだれかの「わかった！」につながれば、それが一番うれしいです。
-              </p>
-              <p>
-                Web制作のご依頼も受け付けています。小規模なサイトやLP制作など、お気軽にご相談ください。
-              </p>
-            </div>
-          </section>
-
-          <!-- 想い -->
-          <section id="thoughts" class="section-block fade-section">
-            <p class="block-label">Why I Code</p>
-            <h2 class="block-h2">コードを書き続ける理由</h2>
-            <div class="about-quote">
-              <p>「子どもたちに、諦めない背中を見せたい。」</p>
-            </div>
-            <div class="body-text">
-              <p>
-                最初にHTMLを書いたのは、子どもの昼寝中でした。
-                「作ったものが画面に出る」——たったそれだけのことが、こんなに楽しいとは思っていませんでした。
-                未経験で、育児中で、時間もない。それでも毎日少しずつ続けられたのは、
-                子どもたちに「やりたいことをやっている親」を見せたかったからだと思います。
-              </p>
-              <p>
-                ブログを始めたのも同じ理由です。学んだことをそのままにせず、アウトプットする。
-                だれかの「わかった！」に少しでも役立てたら、それが一番のモチベーションになっています。
-              </p>
-            </div>
-          </section>
-
-          <!-- Q&A -->
-          <section id="qa" class="section-block fade-section">
-            <p class="block-label">Q &amp; A</p>
-            <h2 class="block-h2">よくある質問</h2>
-            <dl class="qa-list">
-              <div class="qa-item">
-                <dt class="qa-q">どんな人が読んでいるブログですか？</dt>
-                <dd class="qa-a">Web制作を学んでいる初心者の方、子育て中のパパ・ママ、カフェが好きな方が多いです。「自分が最初につまずいた箇所」を意識して書いています。
-                </dd>
-              </div>
-              <div class="qa-item">
-                <dt class="qa-q">Web制作の依頼はできますか？</dt>
-                <dd class="qa-a">はい、受け付けています。LP制作・コーポレートサイトなど、まずはお気軽にご相談ください。</dd>
-              </div>
-              <div class="qa-item">
-                <dt class="qa-q">カフェ記事はどうやって選んでいるんですか？</dt>
-                <dd class="qa-a">実際に足を運んで飲食したお店を紹介しています。子供と一緒に行くことが多いので子連れで行きやすいところが多いです。</dd>
-              </div>
-            </dl>
-          </section>
-
-          <!-- ブログについて -->
-          <section id="this-blog" class="section-block fade-section">
-            <p class="block-label">This Blog</p>
-            <h2 class="block-h2">このブログで書いていること</h2>
-            <ul class="blog-3col">
+          <section id="category-list" class="section-block fade-section">
+            <ul class="listing-layout">
               <li class="fade-item">
-                <a href="web.html" class="blog-mini">
-                  <div class="blog-mini__flex">
-                    <span class="blog-mini-icon">
-                      <img src="img/web-icon.png" alt="Web制作カテゴリーのアイコン">
-                    </span>
-                    <div class="blog-mini_title">
-                      <p class="blog-mini-cat">Web制作</p>
-                      <h3 class="blog-mini-title">コーディング・CSS・WordPress</h3>
+                <a href="#" class="card">
+                  <div class="card-thumb">
+                    <div class="card-thumb-inner">
+                      <img src="img/image.jpg" alt="">
+                      <span class="cat-badge">Web制作</span>
                     </div>
                   </div>
-                  <p class="blog-mini-desc">初心者がつまずきやすいポイントをわかりやすく解説。コピペOKのコードも随時公開中。</p>
+                  <div class="card-body">
+                    <div class="card-meta">
+                      <span class="card-date">2025.11.20</span>
+                    </div>
+                    <h2 class="card-title">【コピペOK】CSSだけで作れるホバーボタン5選｜CodePenデモ付きで初心者でも簡単</h2>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="card">
+                  <div class="card-thumb">
+                    <div class="card-thumb-inner">
+                      <img src="img/image.jpg" alt="">
+                      <span class="cat-badge">Web制作</span>
+                    </div>
+                  </div>
+                  <div class="card-body">
+                    <div class="card-meta">
+                      <span class="card-date">2025.11.20</span>
+                    </div>
+                    <h2 class="card-title">【コピペOK】CSSだけで作れるホバーボタン5選｜CodePenデモ付きで初心者でも簡単</h2>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="card">
+                  <div class="card-thumb">
+                    <div class="card-thumb-inner">
+                      <img src="img/image.jpg" alt="">
+                      <span class="cat-badge">Web制作</span>
+                    </div>
+                  </div>
+                  <div class="card-body">
+                    <div class="card-meta">
+                      <span class="card-date">2025.11.20</span>
+                    </div>
+                    <h2 class="card-title">【コピペOK】CSSだけで作れるホバーボタン5選｜CodePenデモ付きで初心者でも簡単</h2>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="card">
+                  <div class="card-thumb">
+                    <div class="card-thumb-inner">
+                      <img src="img/image.jpg" alt="">
+                      <span class="cat-badge">Web制作</span>
+                    </div>
+                  </div>
+                  <div class="card-body">
+                    <div class="card-meta">
+                      <span class="card-date">2025.11.20</span>
+                    </div>
+                    <h2 class="card-title">【コピペOK】CSSだけで作れるホバーボタン5選｜CodePenデモ付きで初心者でも簡単</h2>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="card">
+                  <div class="card-thumb">
+                    <div class="card-thumb-inner">
+                      <img src="img/image.jpg" alt="">
+                      <span class="cat-badge">Web制作</span>
+                    </div>
+                  </div>
+                  <div class="card-body">
+                    <div class="card-meta">
+                      <span class="card-date">2025.11.20</span>
+                    </div>
+                    <h2 class="card-title">【コピペOK】CSSだけで作れるホバーボタン5選｜CodePenデモ付きで初心者でも簡単</h2>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="card">
+                  <div class="card-thumb">
+                    <div class="card-thumb-inner">
+                      <img src="img/image.jpg" alt="">
+                      <span class="cat-badge">Web制作</span>
+                    </div>
+                  </div>
+                  <div class="card-body">
+                    <div class="card-meta">
+                      <span class="card-date">2025.11.20</span>
+                    </div>
+                    <h2 class="card-title">【コピペOK】CSSだけで作れるホバーボタン5選｜CodePenデモ付きで初心者でも簡単</h2>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="card">
+                  <div class="card-thumb">
+                    <div class="card-thumb-inner">
+                      <img src="img/image.jpg" alt="">
+                      <span class="cat-badge">Web制作</span>
+                    </div>
+                  </div>
+                  <div class="card-body">
+                    <div class="card-meta">
+                      <span class="card-date">2025.11.20</span>
+                    </div>
+                    <h2 class="card-title">【コピペOK】CSSだけで作れるホバーボタン5選｜CodePenデモ付きで初心者でも簡単</h2>
+                  </div>
                 </a>
               </li>
 
-              <li class="fade-item">
-                <a href="parenting.html" class="blog-mini">
-                  <div class="blog-mini__flex">
-                    <span class="blog-mini-icon">
-                      <img src="img/parenting-icon.png" alt="parentingカテゴリーのアイコン">
-                    </span>
-                    <div class="blog-mini_title">
-                      <p class="blog-mini-cat">parenting</p>
-                      <h3 class="blog-mini-title">子育て・育児のリアル</h3>
-                    </div>
-                  </div>
-                  <p class="blog-mini-desc">2児ママ目線の育児ネタ。失敗談も含めて正直に書いています。同じ境遇の方に届けたい。</p>
-                </a>
-              </li>
 
-              <li class="fade-item">
-                <a href="cafe.html" class="blog-mini">
-                  <div class="blog-mini__flex">
-                    <span class="blog-mini-icon">
-                      <img src="img/cafe-icon.png" alt="cafeカテゴリーのアイコン">
-                    </span>
-                    <div class="blog-mini_title">
-                      <p class="blog-mini-cat">Cafe</p>
-                      <h3 class="blog-mini-title">カフェ情報</h3>
-                    </div>
-                  </div>
-                  <p class="blog-mini-desc">子連れOKのお店を中心に、訪れたカフェのレポートをしています。</p>
-                </a>
-              </li>
             </ul>
+
+            <nav class="pagination">
+              <a class="page-numbers prev"></a>
+              <span class="page-numbers current">1</span>
+              <a class="page-numbers">2</a>
+              <a class="page-numbers">3</a>
+              <a class="page-numbers next"></a>
+            </nav>
+
           </section>
 
         </div>

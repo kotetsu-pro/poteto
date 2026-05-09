@@ -17,14 +17,10 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
 
   <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js" defer></script>
-  
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
-
   <script src="js/main.js" defer></script>
 </head>
 
-<body class="works-page">
+<body>
   <header id="header">
 
     <div class="header__inner">
@@ -126,124 +122,90 @@
     </div>
 
   </header>
-  <main>
+  <main class="detail__page works-detail__page">
 
     <div class="wrap">
       <!-- BREADCRUMB -->
       <div class="breadcrumb">
         <a href="index.html">Home</a>
         <span class="arrow"></span>
-        <span>Works</span>
+        <span>works</span>
+        <span class="arrow"></span>
+        <span>タイトル</span>
       </div>
 
-      <!-- PAGE HEADER -->
-      <section class="sab-page__header">
-        <div class="page-header__left">
-          <p class="page-label">Portfolio</p>
-          <h1 class="page-h1 category__h1">制作実績</h1>
-          <p class="page-desc category__desc">
-            これまでに制作したWebサイト・LPをまとめています。<br>
-            目的や課題に合わせて、デザインからコーディングまで丁寧に制作しています。
-          </p>
-        </div>
-        <div class="page-header__right">
-          <div class="works-visual">
-            <div class="circle circle1"></div>
-            <div class="circle circle2"></div>
-          </div>
-        </div>
-      </section>
 
-      <section class="works-main fade-section">
-        <ul class="grid">
-          <li class="fade-item">
-            <a href="single-works.html" class="card works-card">
-              <div class="card-thumb">
-                <div class="card-thumb-inner">
-                  <img src="img/image.jpg" alt="">
-                </div>
-              </div>
-              <div class="card-body">
-                <span class="work-num">01</span>
-                <div class="card-meta">
-                  <span class="cat-badge">Web制作</span>
-                  <span class="card-date">2025.11.20</span>
-                </div>
-                <h2 class="card-title">【コピペOK】CSSだけで作れるホバーボタン5選｜CodePenデモ付きで初心者でも簡単</h2>
-                <p class="work-desc">既存テーマをベースにfunctions.phpとCSSで大幅カスタマイズ。デザインと表示速度を改善。</p>
-                <div class="hover__view">VIEW <span class="arrow"></span></div>
-              </div>
-            </a>
-          </li>
-          <li class="fade-item">
-            <a href="#" class="card works-card">
-              <div class="card-thumb">
-                <div class="card-thumb-inner">
-                  <img src="img/image.jpg" alt="">
-                </div>
-              </div>
-              <div class="card-body">
-                <span class="work-num">01</span>
-                <div class="card-meta">
-                  <span class="cat-badge">Web制作</span>
-                  <span class="card-date">2025.11.20</span>
-                </div>
-                <h2 class="card-title">【コピペOK】CSSだけで作れるホバーボタン5選｜CodePenデモ付きで初心者でも簡単</h2>
-                <p class="work-desc">既存テーマをベースにfunctions.phpとCSSで大幅カスタマイズ。デザインと表示速度を改善。</p>
-                <div class="hover__view">VIEW <span class="arrow"></span></div>
-              </div>
-            </a>
-          </li>
-          <li class="fade-item">
-            <a href="#" class="card works-card">
-              <div class="card-thumb">
-                <div class="card-thumb-inner">
-                  <img src="img/image.jpg" alt="">
-                </div>
-              </div>
-              <div class="card-body">
-                <span class="work-num">01</span>
-                <div class="card-meta">
-                  <span class="cat-badge">Web制作</span>
-                  <span class="card-date">2025.11.20</span>
-                </div>
-                <h2 class="card-title">【コピペOK】CSSだけで作れるホバーボタン5選｜CodePenデモ付きで初心者でも簡単</h2>
-                <p class="work-desc">既存テーマをベースにfunctions.phpとCSSで大幅カスタマイズ。デザインと表示速度を改善。</p>
-                <div class="hover__view">VIEW <span class="arrow"></span></div>
-              </div>
-            </a>
-          </li>
-          <li class="fade-item">
-            <a href="#" class="card works-card">
-              <div class="card-thumb">
-                <div class="card-thumb-inner">
-                  <img src="img/image.jpg" alt="">
-                </div>
-              </div>
-              <div class="card-body">
-                <span class="work-num">01</span>
-                <div class="card-meta">
-                  <span class="cat-badge">Web制作</span>
-                  <span class="card-date">2025.11.20</span>
-                </div>
-                <h2 class="card-title">【コピペOK】CSSだけで作れるホバーボタン5選｜CodePenデモ付きで初心者でも簡単</h2>
-                <p class="work-desc">既存テーマをベースにfunctions.phpとCSSで大幅カスタマイズ。デザインと表示速度を改善。</p>
-                <div class="hover__view">VIEW <span class="arrow"></span></div>
-              </div>
-            </a>
-          </li>
-        </ul>
+      <section class="works__detail">
+
+        <h1 class="post__title">初心者向け｜HTMLの正しい文書構造の基本とNG</h1>
+        <div class="post__meta">
+          <span class="post__category">web制作</span>
+          <span class="post__date">2022.02.22</span>
+        </div>
+
+        <div class="post__thumbnail">
+          <img src="img/image.jpg" alt="" loading="lazy">
+        </div>
+
+        <div class="detail__content">
+
+          <h2>headタグに必要な要素とmetaタグの重要性</h2>
+          <h3>headタグに必要な要素とmetaタグの重要性</h3>
+
+          <p>
+            文書構造を正しく書くためには、headタグの役割を理解することも大切です。headにはサイトの情報やブラウザに伝える設定をまとめます。最低限入れておきたいのは次の３つです。
+          </p>
+          <ul>
+            <li>
+              charset（文字コード）
+              日本語サイトの場合は「UTF-8」を指定します。
+            </li>
+            <li>
+              viewport（スマホ対応の基本）
+              スマホ表示で崩れないためには必須です。
+            </li>
+            <li>meta description
+              検索結果に表示される要約で、SEOにも関わります。
+              また、SNSでシェアしたときに表示される画像やタイトルを設定できるOGPタグも、サイトの印象に大きく関わります。初心者が意外と抜かしやすいので、head内の設定は丁寧に整えておきましょう。</li>
+          </ul>
+
+          <img src="img/image.jpg" alt="">
+
+          <table>
+            <tr>
+              <th>項目</th>
+              <th>内容</th>
+            </tr>
+            <tr>
+              <td>HTML</td>
+              <td>構造</td>
+            </tr>
+          </table>
+
+          <div class="toc">
+            <p class="toc__title">目次</p>
+            <ul class="toc__list">
+              <li><a href="">ew</a>
+                <ul>
+                  <li>li</li>
+                  <li>li</li>
+                </ul>
+              </li>
+              <li>ew</li>
+              <li>ew</li>
+            </ul>
+          </div>
+
+        </div>
 
         <nav class="pagination">
-          <a class="page-numbers prev"></a>
-          <span class="page-numbers current">1</span>
-          <a class="page-numbers">2</a>
-          <a class="page-numbers">3</a>
-          <a class="page-numbers next"></a>
+          <a class="page-numbers prev">前の記事</a>
+          <a class="page-numbers pager__back">一覧に戻る</a>
+          <a class="page-numbers next">次の記事</a>
         </nav>
       </section>
 
-      <section class="cta-strip">
+       <section class="cta-strip">
         <div>
           <p class="cta-label">Contact</p>
           <h2 class="cta-h2">次はあなたのサイトを<br>一緒に作りませんか。</h2>
@@ -251,6 +213,9 @@
         </div>
         <a href="contact.html" class="cta-btn">お問い合わせ</a>
       </section>
+
+    </div>
+
 
     </div>
   </main>

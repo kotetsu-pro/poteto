@@ -20,8 +20,9 @@
   <script src="js/main.js" defer></script>
 </head>
 
-<body class="about-page">
+<body>
   <header id="header">
+
     <div class="header__inner">
 
       <div class="site-title js-title">
@@ -121,159 +122,92 @@
     </div>
 
   </header>
-  <main>
+  <main class="detail__page">
 
     <div class="wrap">
       <!-- BREADCRUMB -->
       <div class="breadcrumb">
         <a href="index.html">Home</a>
         <span class="arrow"></span>
-        <span>About</span>
+        <a href="web.html">Web制作</a>
+        <span class="arrow"></span>
+        <span>タイトル</span>
       </div>
 
       <!-- PAGE HEADER -->
-      <section class="sab-page__header">
-        <div class="page-header__left">
-          <p class="page-label">Profile</p>
-          <h1 class="page-h1">こてつって<br>どんな人？</h1>
-          <p class="page-lead">
-            大阪在住、2児のママ。<br>
-            子育てに奮闘しながら、毎日コードを書いています。<br>
-            Web制作・子育て・カフェ巡りについて発信中。
-          </p>
-        </div>
-        <div class="page-header__right">
-          <div class="avatar-wrap">
-            <div class="avatar-ring-2"></div>
-            <div class="avatar-ring"></div>
-            <div class="avatar">
-              <img src="img/profile.webp" alt="プロフィール画像">
-            </div>
-            <p class="avatar-caption">Kotetsu — Web Coder &amp; Mam</p>
-          </div>
-        </div>
-      </section>
 
       <div class="sub-page__container">
 
         <!-- MAIN -->
         <div class="sub-page__main">
+          <section class="category__detail">
 
-          <!-- 自己紹介 -->
-          <section id="introduction" class="section-block fade-section">
-            <p class="block-label">Introduction</p>
-            <h2 class="block-h2">はじめまして、こてつです。</h2>
-            <div class="body-text">
-              <p>
-                大阪で2人の子どもを育てながら、Webコーダーとして日々作業しています。
-                もともと全くの未経験からHTMLとCSSを始め、「作ったものが画面に現れる」その瞬間の楽しさに
-                すっかりハマってしまいました。
-              </p>
-              <p>
-                子育て中でも「背中を見せたい」という気持ちが一番の原動力です。
-                仕事・育児・カフェ巡りをしながら、毎日少しずつアウトプットを続けています。
-                このブログがだれかの「わかった！」につながれば、それが一番うれしいです。
-              </p>
-              <p>
-                Web制作のご依頼も受け付けています。小規模なサイトやLP制作など、お気軽にご相談ください。
-              </p>
+            <h1 class="post__title">初心者向け｜HTMLの正しい文書構造の基本とNG</h1>
+            <div class="post__meta">
+              <span class="post__category">web制作</span>
+              <span class="post__date">2022.02.22</span>
             </div>
-          </section>
 
-          <!-- 想い -->
-          <section id="thoughts" class="section-block fade-section">
-            <p class="block-label">Why I Code</p>
-            <h2 class="block-h2">コードを書き続ける理由</h2>
-            <div class="about-quote">
-              <p>「子どもたちに、諦めない背中を見せたい。」</p>
+            <div class="post__thumbnail">
+              <img src="img/image.jpg" alt="" loading="lazy">
             </div>
-            <div class="body-text">
+
+            <div class="detail__content">
+
+              <h2>headタグに必要な要素とmetaタグの重要性</h2>
+
               <p>
-                最初にHTMLを書いたのは、子どもの昼寝中でした。
-                「作ったものが画面に出る」——たったそれだけのことが、こんなに楽しいとは思っていませんでした。
-                未経験で、育児中で、時間もない。それでも毎日少しずつ続けられたのは、
-                子どもたちに「やりたいことをやっている親」を見せたかったからだと思います。
+                文書構造を正しく書くためには、headタグの役割を理解することも大切です。headにはサイトの情報やブラウザに伝える設定をまとめます。最低限入れておきたいのは次の３つです。
               </p>
-              <p>
-                ブログを始めたのも同じ理由です。学んだことをそのままにせず、アウトプットする。
-                だれかの「わかった！」に少しでも役立てたら、それが一番のモチベーションになっています。
-              </p>
+              <ul>
+                <li>
+                  charset（文字コード）
+                  日本語サイトの場合は「UTF-8」を指定します。
+                </li>
+                <li>
+                  viewport（スマホ対応の基本）
+                  スマホ表示で崩れないためには必須です。
+                </li>
+                <li>meta description
+                  検索結果に表示される要約で、SEOにも関わります。
+                  また、SNSでシェアしたときに表示される画像やタイトルを設定できるOGPタグも、サイトの印象に大きく関わります。初心者が意外と抜かしやすいので、head内の設定は丁寧に整えておきましょう。</li>
+              </ul>
+
+              <img src="img/image.jpg" alt="">
+
+              <table>
+                <tr>
+                  <th>項目</th>
+                  <th>内容</th>
+                </tr>
+                <tr>
+                  <td>HTML</td>
+                  <td>構造</td>
+                </tr>
+              </table>
+
+              <div class="toc">
+                <p class="toc__title">目次</p>
+                <ul class="toc__list">
+                  <li><a href="">ew</a>
+                    <ul>
+                      <li>li</li>
+                      <li>li</li>
+                    </ul>
+                  </li>
+                  <li>ew</li>
+                  <li>ew</li>
+                </ul>
+              </div>
+
             </div>
+
+            <nav class="pagination">
+              <a class="page-numbers prev">前の記事</a>
+              <a class="page-numbers pager__back">一覧に戻る</a>
+              <a class="page-numbers next">次の記事</a>
+            </nav>
           </section>
-
-          <!-- Q&A -->
-          <section id="qa" class="section-block fade-section">
-            <p class="block-label">Q &amp; A</p>
-            <h2 class="block-h2">よくある質問</h2>
-            <dl class="qa-list">
-              <div class="qa-item">
-                <dt class="qa-q">どんな人が読んでいるブログですか？</dt>
-                <dd class="qa-a">Web制作を学んでいる初心者の方、子育て中のパパ・ママ、カフェが好きな方が多いです。「自分が最初につまずいた箇所」を意識して書いています。
-                </dd>
-              </div>
-              <div class="qa-item">
-                <dt class="qa-q">Web制作の依頼はできますか？</dt>
-                <dd class="qa-a">はい、受け付けています。LP制作・コーポレートサイトなど、まずはお気軽にご相談ください。</dd>
-              </div>
-              <div class="qa-item">
-                <dt class="qa-q">カフェ記事はどうやって選んでいるんですか？</dt>
-                <dd class="qa-a">実際に足を運んで飲食したお店を紹介しています。子供と一緒に行くことが多いので子連れで行きやすいところが多いです。</dd>
-              </div>
-            </dl>
-          </section>
-
-          <!-- ブログについて -->
-          <section id="this-blog" class="section-block fade-section">
-            <p class="block-label">This Blog</p>
-            <h2 class="block-h2">このブログで書いていること</h2>
-            <ul class="blog-3col">
-              <li class="fade-item">
-                <a href="web.html" class="blog-mini">
-                  <div class="blog-mini__flex">
-                    <span class="blog-mini-icon">
-                      <img src="img/web-icon.png" alt="Web制作カテゴリーのアイコン">
-                    </span>
-                    <div class="blog-mini_title">
-                      <p class="blog-mini-cat">Web制作</p>
-                      <h3 class="blog-mini-title">コーディング・CSS・WordPress</h3>
-                    </div>
-                  </div>
-                  <p class="blog-mini-desc">初心者がつまずきやすいポイントをわかりやすく解説。コピペOKのコードも随時公開中。</p>
-                </a>
-              </li>
-
-              <li class="fade-item">
-                <a href="parenting.html" class="blog-mini">
-                  <div class="blog-mini__flex">
-                    <span class="blog-mini-icon">
-                      <img src="img/parenting-icon.png" alt="parentingカテゴリーのアイコン">
-                    </span>
-                    <div class="blog-mini_title">
-                      <p class="blog-mini-cat">parenting</p>
-                      <h3 class="blog-mini-title">子育て・育児のリアル</h3>
-                    </div>
-                  </div>
-                  <p class="blog-mini-desc">2児ママ目線の育児ネタ。失敗談も含めて正直に書いています。同じ境遇の方に届けたい。</p>
-                </a>
-              </li>
-
-              <li class="fade-item">
-                <a href="cafe.html" class="blog-mini">
-                  <div class="blog-mini__flex">
-                    <span class="blog-mini-icon">
-                      <img src="img/cafe-icon.png" alt="cafeカテゴリーのアイコン">
-                    </span>
-                    <div class="blog-mini_title">
-                      <p class="blog-mini-cat">Cafe</p>
-                      <h3 class="blog-mini-title">カフェ情報</h3>
-                    </div>
-                  </div>
-                  <p class="blog-mini-desc">子連れOKのお店を中心に、訪れたカフェのレポートをしています。</p>
-                </a>
-              </li>
-            </ul>
-          </section>
-
         </div>
 
         <!-- SIDEBAR -->

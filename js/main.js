@@ -16,9 +16,6 @@ hamburger.addEventListener("click", () => {
 
 
 // 最新記事
-
-if (window.innerWidth > 769) {
-
   const heroItems = document.querySelectorAll(".hero__main");
   const sideItems = document.querySelectorAll(".js-hero-item");
 
@@ -33,7 +30,6 @@ if (window.innerWidth > 769) {
 
   });
 
-}
 
 let heroSwiper;
 
@@ -89,6 +85,24 @@ function updateActive(swiper) {
 
 initHeroSwiper();
 
+const sections = document.querySelectorAll('.fade-section');
+
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('is-inview');
+      observer.unobserve(entry.target); // ←1回だけ
+    }
+  });
+}, {
+  threshold: 0.2
+});
+
+sections.forEach(section => {
+  observer.observe(section);
+});
+
+
 // web制作ページheader動くUI
 
 window.addEventListener("resize", initHeroSwiper);
@@ -101,29 +115,54 @@ const text = `const blog = {
 
 const el = document.getElementById("typing-code");
 
-let i = 0;
-const speed = 100;
+if (el) {
 
-function typing() {
+  let i = 0;
+  const speed = 100;
 
-  if (i < text.length) {
-    el.textContent += text.charAt(i);
-    i++;
-    setTimeout(typing, speed);
+  function typing() {
 
-  } else {
+    if (i < text.length) {
+      el.textContent += text.charAt(i);
+      i++;
+      setTimeout(typing, speed);
 
-    setTimeout(() => {
-      el.textContent = "";
-      i = 0;
-      typing();
-    }, 1500);
+    } else {
+
+      setTimeout(() => {
+        el.textContent = "";
+        i = 0;
+        typing();
+      }, 1500);
+
+    }
 
   }
 
+  typing();
 }
 
-typing();
 
+gsap.registerPlugin(ScrollTrigger);
 
-typing();
+gsap.to(".circle1", {
+  x: -60,
+  ease: "none",
+  scrollTrigger: {
+    trigger: ".works-visual",
+    start: "top bottom",
+    end: "bottom top",
+    scrub: true
+  }
+});
+
+gsap.to(".circle2", {
+  x: -100,
+  ease: "none",
+  scrollTrigger: {
+    trigger: ".works-visual",
+    start: "top bottom",
+    end: "bottom top",
+    scrub: true
+  }
+});
